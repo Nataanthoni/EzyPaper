@@ -14,7 +14,7 @@ class NewsPaperAdapter(private  val newspapers: ArrayList<Newspaper>):RecyclerVi
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
 
-            val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_newspaper_rows, parent, false)
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.newspaper_rows, parent, false)
             view.setOnClickListener {
                 val intent = Intent(parent.context, OperatorActivity:: class.java)
                 parent.context.startActivity(intent)
