@@ -37,11 +37,11 @@ class DashboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val newspapers = arrayListOf<Newspaper>()
-        for (i in 0..3){
+        for (i in 0..5) {
             newspapers.add(Newspaper("", "", 383.0))
         }
         recyclerview_newspaper.apply {
-            layoutManager = GridLayoutManager(activity,2)
+            layoutManager = GridLayoutManager(activity, 2)
             adapter = NewsPaperAdapter(newspapers)
 
         }
