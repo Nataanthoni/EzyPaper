@@ -1,0 +1,2 @@
+rootProject.name='EzyPaper'
+include ':app'
