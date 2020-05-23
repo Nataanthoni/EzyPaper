@@ -3,19 +3,35 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="background">@color/white</item>
-
+        <item name="colorPrimary">@color/colorOrange</item>
+        <item name="colorPrimaryDark">@color/colorOrange</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="titleTextColor">@color/colorOrange</item>
+        <!--Changes the back arrow to orange color-->
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
     </style>
 
-    <!-- Base application theme. -->
+    <!-- this cannot apply textColor -->
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:backgroundStacked">@color/colorPrimary</item>
+        <item name="android:backgroundSplit">@color/colorPrimary</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/colorPrimary</item>
+        <item name="backgroundStacked">@color/colorPrimary</item>
+        <item name="backgroundSplit">@color/colorPrimary</item>
+    </style>
+
+
+    <!-- Introtheme application theme. -->
     <style name="theme.Introtheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="background">@color/white</item>
         <item name="android:background">@color/white</item>
-
     </style>
 
     //Handles the full size of the splash activity
@@ -25,15 +41,50 @@
 
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/white</item>
-        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowFullscreen">false</item>
 
+        //handles the top action bar and navigation color
         <item name="android:navigationBarColor">@color/white</item>
-        <item name="android:navigationContentDescription">@color/white</item>
+        <item name="android:navigationContentDescription">@color/colorPrimary</item>
         <item name="android:windowLightNavigationBar">@color/white</item>
 
         <item name="actionBarStyle">@style/theme.Introtheme</item>
+        <item name="android:actionBarStyle">@style/theme.Welcome</item>
+
+    </style>
+
+    <!-- Handles welcome and phone number verify-->
+    <style name="theme.Welcome" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorOrange</item>
+        <item name="background">@color/colorOrange</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!--Welcome theme -->
+
+    <style name="MyWelcometheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorOrange</item>
+        //Sets the primary color for the action bar
+        <item name="colorPrimaryDark">@color/colorOrange</item>
+        <item name="colorAccent">@color/colorOrange</item>
+        <item name="android:windowFullscreen">false</item>
+        <!-- Styles the navigation section-->
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:navigationContentDescription">@color/colorPrimary</item>
+        <item name="android:windowLightNavigationBar">@color/colorPrimary</item>
+
+        <item name="actionBarStyle">@style/theme.Welcome</item>
         <item name="android:actionBarStyle">@style/theme.Introtheme</item>
 
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 </resources>
