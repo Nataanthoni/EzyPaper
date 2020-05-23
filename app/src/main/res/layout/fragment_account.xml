@@ -111,8 +111,6 @@
     </LinearLayout>
 
 
-    //Start the contact menu items
-
     <LinearLayout
         android:id="@+id/account_more"
         android:layout_width="match_parent"
@@ -124,338 +122,325 @@
         app:layout_constraintTop_toBottomOf="@id/profile">
 
 
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="6dp"
-            android:layout_marginTop="5dp"
-            app:cardBackgroundColor="@android:color/white"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="3dp"
-            app:cardUseCompatPadding="true">
-
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#E7E6E6"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/communications"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:padding="5dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#E7E6E6"
-                    android:orientation="vertical" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/communications"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/emailaddresss"
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:src="@drawable/ic_email" />
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="220dp"
+                    <ImageView
+                        android:id="@+id/emailaddresss"
+                        android:layout_width="60dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:padding="5dp"
+                        android:src="@drawable/ic_email" />
+                </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/name"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="20sp"
-                            android:drawableTint="@color/colorAccent"
-                            android:text="Communications"
 
-                            android:textSize="20sp" />
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/name"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20sp"
+                        android:drawableTint="@color/colorAccent"
+                        android:text="Communications"
 
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:drawableEnd="@drawable/ic_open"
-                            android:drawableTint="@color/colorAccent"
-                            android:padding="15dp"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textSize="20sp" />
-                    </LinearLayout>
+                        android:textSize="20sp" />
 
                 </LinearLayout>
-                //responsoble for the bottom or top border
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#E7E6E6"
-                    android:orientation="vertical" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/someother"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:src="@drawable/ic_lock" />
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="220dp"
+                    <TextView
+                        android:layout_width="60dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/something"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="20sp"
-                            android:drawableTint="@color/colorAccent"
-                            android:text="Some Other Action"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:drawableEnd="@drawable/ic_open"
-                            android:drawableTint="@color/colorAccent"
-                            android:padding="15dp"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textSize="20sp" />
-                    </LinearLayout>
-
+                        android:drawableEnd="@drawable/ic_open"
+                        android:drawableTint="@color/colorAccent"
+                        android:padding="15dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textSize="20sp" />
                 </LinearLayout>
-                //responsoble for the bottom or top border
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#E7E6E6"
-                    android:orientation="vertical" />
-
-                <LinearLayout
-                    android:id="@+id/help"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:src="@drawable/ic_help" />
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="220dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="20sp"
-                            android:drawableTint="@color/colorAccent"
-                            android:text="Contact | Help"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:drawableEnd="@drawable/ic_open"
-                            android:drawableTint="@color/colorAccent"
-                            android:padding="15dp"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textSize="20sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-                //responsoble for the bottom or top border
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#E7E6E6"
-                    android:orientation="vertical" />
-
-
-                <LinearLayout
-                    android:id="@+id/about"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:src="@drawable/ic_about" />
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="220dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/about3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="20sp"
-                            android:drawableTint="@color/colorAccent"
-                            android:text="About"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:drawableEnd="@drawable/ic_open"
-                            android:drawableTint="@color/colorAccent"
-                            android:padding="15dp"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textSize="20sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-                //responsoble for the bottom or top border
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#E7E6E6"
-                    android:orientation="vertical" />
-
-                <LinearLayout
-                    android:id="@+id/logout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:padding="5dp"
-                            android:src="@drawable/ic_power" />
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="220dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="20sp"
-                            android:drawableTint="@color/colorAccent"
-                            android:text="Sign Out"
-                            android:textSize="20sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="wrap_content"
-                            android:drawableEnd="@drawable/ic_open"
-                            android:drawableTint="@color/colorAccent"
-                            android:padding="15dp"
-                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                            android:textSize="20sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-                //responsoble for the bottom or top border
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#E7E6E6"
-                    android:orientation="vertical" />
 
             </LinearLayout>
+            //responsoble for the bottom or top border
 
-        </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#E7E6E6"
+                android:orientation="vertical" />
 
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:id="@+id/someother"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_lock" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/something"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20sp"
+                        android:drawableTint="@color/colorAccent"
+                        android:text="Some Other Action"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_open"
+                        android:drawableTint="@color/colorAccent"
+                        android:padding="15dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            //responsoble for the bottom or top border
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#E7E6E6"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_help" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20sp"
+                        android:drawableTint="@color/colorAccent"
+                        android:text="Contact | Help"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_open"
+                        android:drawableTint="@color/colorAccent"
+                        android:padding="15dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            //responsoble for the bottom or top border
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#E7E6E6"
+                android:orientation="vertical" />
+
+
+            <LinearLayout
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_about" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/about3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20sp"
+                        android:drawableTint="@color/colorAccent"
+                        android:text="About"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_open"
+                        android:drawableTint="@color/colorAccent"
+                        android:padding="15dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            //responsoble for the bottom or top border
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#E7E6E6"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_power" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="20sp"
+                        android:drawableTint="@color/colorAccent"
+                        android:text="Sign Out"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_open"
+                        android:drawableTint="@color/colorAccent"
+                        android:padding="15dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            //responsoble for the bottom or top border
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#E7E6E6"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+
+</LinearLayout></androidx.constraintlayout.widget.ConstraintLayout>
