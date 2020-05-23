@@ -87,7 +87,7 @@
             android:visibility="invisible"
             android:layout_marginTop="5dp"
             android:id="@+id/progressbarlogin"
-            android:layout_width="wrap_content"
+            android:layout_width="25dp"
             android:layout_height="wrap_content"/>
 
         <TextView

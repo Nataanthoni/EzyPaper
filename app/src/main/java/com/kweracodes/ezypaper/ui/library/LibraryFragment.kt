@@ -15,15 +15,15 @@ import kotlinx.android.synthetic.main.fragment_library.*
 
 class LibraryFragment : Fragment() {
 
-    private lateinit var moreViewModel: MoreViewModel
+    private lateinit var notificationsViewModel: NotificationsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        moreViewModel =
-            ViewModelProviders.of(this).get(MoreViewModel::class.java)
+        notificationsViewModel =
+            ViewModelProviders.of(this).get(NotificationsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_library, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
         return root

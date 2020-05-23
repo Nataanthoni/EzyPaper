@@ -65,4 +65,7 @@ dependencies {
 
     //Sweet alert
     implementation 'com.github.f0ris.sweetalert:library:1.5.6'
+
+    //Lottie animations
+    implementation 'com.airbnb.android:lottie:2.7.0'
 }

@@ -1,17 +1,15 @@
 package com.kweracodes.ezypaper
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.Window
-import android.view.WindowManager
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import cn.pedant.SweetAlert.SweetAlertDialog
 import com.killasites.magazine89.RetrofitClient
 import com.kweracodes.ezypaper.models.LoginResponse
-import kotlinx.android.synthetic.main.activity_login.*
 import com.kweracodes.ezypaper.storage.SharedPrefManager
+import kotlinx.android.synthetic.main.activity_login.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

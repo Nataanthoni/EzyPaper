@@ -1,4 +1,4 @@
-package com.kweracodes.ezypaper.ui.more
+package com.kweracodes.ezypaper.ui.notifications
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,21 +11,21 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.kweracodes.ezypaper.R
 import com.kweracodes.ezypaper.adapters.LibraryAdapter
 import com.kweracodes.ezypaper.models.Library
-import com.kweracodes.ezypaper.ui.library.MoreViewModel
+import com.kweracodes.ezypaper.ui.library.NotificationsViewModel
 import kotlinx.android.synthetic.main.fragment_library.*
 
-class MoreFragment : Fragment() {
+class NotificationsFragment : Fragment() {
 
-    private lateinit var moreViewModel: MoreViewModel
+    private lateinit var notificationsViewModel: NotificationsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        moreViewModel =
-            ViewModelProviders.of(this).get(MoreViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_library, container, false)
+        notificationsViewModel =
+            ViewModelProviders.of(this).get(NotificationsViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
         return root
     }
@@ -33,15 +33,7 @@ class MoreFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val libraries = arrayListOf<Library>()
-        for (i in 0..9){
-            libraries.add(Library("Listing Title", "", "",383.0))
-        }
-        recyclerview_library.apply {
-            layoutManager = LinearLayoutManager(activity)
-            adapter = LibraryAdapter(libraries)
 
-        }
 
     }
 }
